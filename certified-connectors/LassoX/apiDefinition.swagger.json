@@ -3,7 +3,7 @@
   "info": {
     "title": "Lasso X",
     "description": "This connector allows you to use the Lasso X API to retrieve information about the People, Companies and Production Units in the Danish CVR Registry.\n\nRequires an API Key from Lasso X. For more information, visit www.lassox.com",
-    "version": "2.2",
+    "version": "2.3",
     "contact": {
       "name": "Lasso X Support",
       "url": "https://lassox.com/support/tech-support",
@@ -151,6 +151,11 @@
                   "type": "string",
                   "description": "e.g. NORMAL",
                   "title": "Status"
+                },
+                "lastStatusChange": {
+                  "type": "string",
+                  "description": "Date this company last changed its status",
+                  "title": "Last status change"
                 },
                 "phone": {
                   "type": "string",
@@ -1017,6 +1022,11 @@
                     "type": "string",
                     "description": "Status of the Production Unit",
                     "title": "Status"
+                  },
+                  "lastStatusChange": {
+                    "type": "string",
+                    "description": "Date this production unit last changed its status",
+                    "title": "Last status change"
                   },
                   "lifeTime": {
                     "type": "object",
@@ -3328,6 +3338,11 @@
                   "type": "string",
                   "description": "Status of the Production Unit",
                   "title": "Status"
+                },
+                "lastStatusChange": {
+                  "type": "string",
+                  "description": "Date this production unit last changed its status",
+                  "title": "Last status change"
                 },
                 "lifeTime": {
                   "type": "object",
